@@ -23,20 +23,20 @@ export function AboutSection() {
 
           <div className="space-y-4 text-muted-foreground">
             <p className="text-lg leading-relaxed">
-              Hey, I&apos;m <span className="text-foreground">{site.name}</span> —
-              I build web applications that are fast, accessible, and a
-              little bit fun to use. My focus is the intersection of clean
-              engineering and thoughtful design.
+              Hey, I&apos;m <span className="text-foreground">{site.name}</span>
+              . I build web applications that are fast, accessible, and a little
+              bit fun to use. My focus is the intersection of clean engineering
+              and thoughtful design.
             </p>
             <p className="leading-relaxed">
               When I&apos;m not shipping code, I&apos;m usually exploring new
               tools, tinkering with side projects, or diving into whatever
-              framework update just dropped. I like solving problems end to
-              end — from the database schema to the last pixel of the UI.
+              framework update just dropped. I like solving problems end to end,
+              from the database schema to the last pixel of the UI.
             </p>
             <p className="leading-relaxed">
               I&apos;m always open to interesting conversations and new
-              opportunities — feel free to reach out below.
+              opportunities. Feel free to reach out below.
             </p>
           </div>
         </div>

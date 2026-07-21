@@ -30,8 +30,8 @@ export function HeroSection() {
 
       <p className="mt-6 max-w-xl text-balance text-muted-foreground">
         {site.tagline} I care about clean, maintainable code and building
-        products that feel great to use — currently exploring what&apos;s next
-        in web development, one project at a time.
+        products that feel great to use. Currently exploring what&apos;s next in
+        web development, one project at a time.
       </p>
 
       <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row">

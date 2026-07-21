@@ -1,5 +1,6 @@
 export const site = {
   name: "Paul Adrian Soncio",
+  shortName: "Paul Adrian",
   logoInitials: "PS",
   role: "Web Developer",
   tagline: "Building fast, thoughtful software for the web. ",

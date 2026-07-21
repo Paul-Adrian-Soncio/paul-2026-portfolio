@@ -64,6 +64,7 @@ export function ContactSection() {
               value={form.name}
               onChange={(e) => setForm({ ...form, name: e.target.value })}
               placeholder="Your name"
+              className="h-11 px-4 py-2.5"
             />
           </div>
 
@@ -76,6 +77,7 @@ export function ContactSection() {
               value={form.email}
               onChange={(e) => setForm({ ...form, email: e.target.value })}
               placeholder="you@example.com"
+              className="h-11 px-4 py-2.5"
             />
           </div>
 
@@ -88,6 +90,7 @@ export function ContactSection() {
               value={form.message}
               onChange={(e) => setForm({ ...form, message: e.target.value })}
               placeholder="What's on your mind?"
+              className="px-4 py-3"
             />
           </div>
 

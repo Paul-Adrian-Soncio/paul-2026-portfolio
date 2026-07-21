@@ -13,18 +13,18 @@ export function HeroSection() {
         <DarkVeil hueShift={150} warpAmount={4} resolutionScale={1} />
       </div>
 
-      <p className="font-mono text-sm uppercase tracking-[0.3em] text-neon-cyan text-glow-cyan">
+      <p className="font-mono text-xs md:text-sm uppercase tracking-[0.3em] text-neon-cyan text-glow-cyan">
         {site.location}
       </p>
 
       <h1 className="mt-6 max-w-3xl font-heading text-4xl font-bold leading-tight text-foreground sm:text-6xl">
         Hi, I&apos;m{" "}
         <span className="bg-gradient-to-r from-neon-pink to-neon-purple bg-clip-text text-transparent">
-          {site.name}
+          {site.shortName}
         </span>
       </h1>
 
-      <p className="mt-4 font-heading text-xl font-medium text-neon-pink text-glow-pink sm:text-2xl">
+      <p className="mt-1 font-heading text-xl font-medium text-neon-pink text-glow-pink sm:text-2xl">
         {site.role}
       </p>
 
@@ -34,11 +34,11 @@ export function HeroSection() {
         web development, one project at a time.
       </p>
 
-      <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row">
+      <div className="mt-10 flex w-full max-w-sm flex-col items-center gap-4 sm:max-w-none sm:w-auto sm:flex-row">
         <Button
           size="lg"
           nativeButton={false}
-          className="bg-gradient-to-r from-neon-pink to-neon-purple text-white shadow-lg shadow-neon-pink/30 hover:opacity-90 p-5"
+          className="w-3xs bg-gradient-to-r from-neon-pink to-neon-purple text-white shadow-lg shadow-neon-pink/30 hover:opacity-90 p-5 md:w-auto"
           render={
             <a href={site.resumeUrl} download>
               <Download className="size-4" />
@@ -50,7 +50,7 @@ export function HeroSection() {
           size="lg"
           variant="outline"
           nativeButton={false}
-          className="border-white/15 p-5"
+          className="w-3xs border-white/15 p-5 md:w-auto"
           render={<a href="#projects">View My Work</a>}
         />
       </div>

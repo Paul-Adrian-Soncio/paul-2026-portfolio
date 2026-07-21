@@ -13,7 +13,7 @@ export const projects: Project[] = [
     description:
       "A short description of this project — what it does, the problem it solves, and any notable technical details worth highlighting.",
     image: "/images/projects/project-1.svg",
-    status: "Deployed",
+    status: "Coming Soon",
     githubUrl: "https://github.com/your-username/project-one",
     liveUrl: "https://project-one.example.com",
   },
@@ -22,7 +22,7 @@ export const projects: Project[] = [
     description:
       "A short description of this project — what it does, the problem it solves, and any notable technical details worth highlighting.",
     image: "/images/projects/project-2.svg",
-    status: "On Development",
+    status: "Coming Soon",
     githubUrl: "https://github.com/your-username/project-two",
   },
   {
@@ -30,7 +30,7 @@ export const projects: Project[] = [
     description:
       "A short description of this project — what it does, the problem it solves, and any notable technical details worth highlighting.",
     image: "/images/projects/project-3.svg",
-    status: "Deployed",
+    status: "Coming Soon",
     liveUrl: "https://project-three.example.com",
   },
   {
@@ -38,7 +38,7 @@ export const projects: Project[] = [
     description:
       "A short description of this project — what it does, the problem it solves, and any notable technical details worth highlighting.",
     image: "/images/projects/project-4.svg",
-    status: "Contributor",
+    status: "Coming Soon",
     githubUrl: "https://github.com/your-username/project-four",
   },
 ];

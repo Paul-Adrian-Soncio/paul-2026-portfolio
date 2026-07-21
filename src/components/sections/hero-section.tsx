@@ -38,7 +38,7 @@ export function HeroSection() {
         <Button
           size="lg"
           nativeButton={false}
-          className="bg-gradient-to-r from-neon-pink to-neon-purple text-white shadow-lg shadow-neon-pink/30 hover:opacity-90"
+          className="bg-gradient-to-r from-neon-pink to-neon-purple text-white shadow-lg shadow-neon-pink/30 hover:opacity-90 p-5"
           render={
             <a href={site.resumeUrl} download>
               <Download className="size-4" />
@@ -50,7 +50,7 @@ export function HeroSection() {
           size="lg"
           variant="outline"
           nativeButton={false}
-          className="border-white/15"
+          className="border-white/15 p-5"
           render={<a href="#projects">View My Work</a>}
         />
       </div>

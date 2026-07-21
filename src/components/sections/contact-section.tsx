@@ -95,7 +95,7 @@ export function ContactSection() {
             type="submit"
             size="lg"
             disabled={status === "submitting"}
-            className="bg-gradient-to-r from-neon-pink to-neon-purple text-white shadow-lg shadow-neon-pink/30 hover:opacity-90"
+            className="bg-gradient-to-r from-neon-pink to-neon-purple text-white shadow-lg shadow-neon-pink/30 hover:opacity-90 p-5"
           >
             {status === "submitting" ? (
               <>

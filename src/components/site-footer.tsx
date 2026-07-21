@@ -34,7 +34,7 @@ export function SiteFooter() {
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
               >
-                <FaLinkedin className="size-5" />
+                <FaLinkedin className="size-8" />
               </a>,
               <a
                 key="github"
@@ -43,10 +43,10 @@ export function SiteFooter() {
                 rel="noopener noreferrer"
                 aria-label="GitHub"
               >
-                <SiGithub className="size-5" />
+                <SiGithub className="size-8" />
               </a>,
               <a key="email" href={`mailto:${site.email}`} aria-label="Email">
-                <Mail className="size-5" />
+                <Mail className="size-8" />
               </a>,
             ]}
           />

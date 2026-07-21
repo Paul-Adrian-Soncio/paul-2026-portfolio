@@ -7,7 +7,7 @@ export const site = {
     "Personal portfolio of Paul Adrian Soncio, a web developer building fast, thoughtful web experiences.",
   location: "Based in the Philippines",
   email: "pauladrian.soncio@gmail.com",
-  resumeUrl: "/resume.pdf",
+  resumeUrl: "/2026_Resume_Paul.pdf",
   social: {
     github: "https://github.com/Paul-Adrian-Soncio",
     linkedin: "https://www.linkedin.com/in/pauladriansoncio/",

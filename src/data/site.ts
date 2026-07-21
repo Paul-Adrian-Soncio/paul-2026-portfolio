@@ -1,12 +1,12 @@
 export const site = {
-  name: "Paul Soncio",
+  name: "Paul Adrian Soncio",
   logoInitials: "PS",
-  role: "Software Engineer",
+  role: "Web Developer",
   tagline: "Building fast, thoughtful software for the web.",
   description:
-    "Personal portfolio of Paul Soncio, a software engineer building fast, thoughtful web experiences.",
+    "Personal portfolio of Paul Adrian Soncio, a web developer building fast, thoughtful web experiences.",
   location: "Based in the Philippines",
-  email: "soncio.paul@myschoolsuite.io",
+  email: "pauladrian.soncio@gmail.com",
   resumeUrl: "/resume.pdf",
   social: {
     github: "https://github.com/your-username",

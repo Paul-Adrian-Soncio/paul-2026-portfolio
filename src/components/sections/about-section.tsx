@@ -13,10 +13,10 @@ export function AboutSection() {
             <div className="absolute -inset-2 rounded-3xl bg-gradient-to-br from-neon-pink/40 to-neon-cyan/30 blur-2xl" />
             <div className="glass-panel relative aspect-square overflow-hidden rounded-3xl">
               <Image
-                src="/images/profile.svg"
+                src="/images/profile.jpg"
                 alt={`Portrait of ${site.name}`}
                 fill
-                className="object-cover"
+                className="object-cover object-top"
               />
             </div>
           </div>

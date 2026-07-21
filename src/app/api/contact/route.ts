@@ -13,9 +13,46 @@ export async function POST(request: Request) {
     );
   }
 
-  // TODO: wire this up to a real email/notification service
-  // (e.g. Resend, SendGrid, or Formspree) before going live.
-  console.log("New contact form submission:", { name, email, message });
+  const apiKey = process.env.FORMINIT_API_KEY;
+  const formId = process.env.FORMINIT_FORM_ID;
+
+  if (!apiKey || !formId) {
+    console.error("Missing FORMINIT_API_KEY or FORMINIT_FORM_ID env vars.");
+    return NextResponse.json(
+      { error: "Contact form is not configured." },
+      { status: 500 },
+    );
+  }
+
+  const forminitRes = await fetch(`https://forminit.com/f/${formId}`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "X-API-KEY": apiKey,
+    },
+    body: JSON.stringify({
+      blocks: [
+        {
+          type: "sender",
+          properties: { email, fullName: name },
+        },
+        {
+          type: "text",
+          name: "message",
+          value: message,
+        },
+      ],
+    }),
+  });
+
+  if (!forminitRes.ok) {
+    const detail = await forminitRes.text().catch(() => "");
+    console.error("Forminit submission failed:", forminitRes.status, detail);
+    return NextResponse.json(
+      { error: "Failed to send message." },
+      { status: 502 },
+    );
+  }
 
   return NextResponse.json({ success: true });
 }

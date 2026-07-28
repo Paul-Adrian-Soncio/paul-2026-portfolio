@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { IntroGate } from "@/components/intro-gate";
 import { site } from "@/data/site";
 
 const geistSans = Geist({
@@ -37,6 +38,7 @@ export default function RootLayout({
       className={`dark ${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} h-full antialiased`}
     >
       <body className="relative min-h-full flex flex-col overflow-x-hidden bg-page-gradient">
+        <IntroGate />
         <SiteHeader />
         <main className="relative z-10 flex-1 pt-16">{children}</main>
         <SiteFooter />

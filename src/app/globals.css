@@ -163,3 +163,144 @@
     background-attachment: fixed;
   }
 }
+
+@keyframes glitch-jitter {
+  0%,
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  10% {
+    transform: translate(-4px, 2px);
+    opacity: 0.85;
+  }
+  20% {
+    transform: translate(3px, -1px);
+    opacity: 1;
+  }
+  30% {
+    transform: translate(-2px, -2px);
+    opacity: 0.7;
+  }
+  40% {
+    transform: translate(4px, 1px);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-3px, 2px);
+    opacity: 0.8;
+  }
+  60% {
+    transform: translate(2px, -2px);
+    opacity: 1;
+  }
+  70% {
+    transform: translate(-4px, 0);
+    opacity: 0.6;
+  }
+  80% {
+    transform: translate(3px, 2px);
+    opacity: 1;
+  }
+  90% {
+    transform: translate(-2px, -1px);
+    opacity: 0.85;
+  }
+}
+
+@keyframes glitch-slice {
+  0%,
+  100% {
+    clip-path: inset(0 0 0 0);
+    transform: translateX(0);
+  }
+  8% {
+    clip-path: inset(10% 0 70% 0);
+    transform: translateX(-8px);
+  }
+  16% {
+    clip-path: inset(60% 0 15% 0);
+    transform: translateX(6px);
+  }
+  24% {
+    clip-path: inset(30% 0 45% 0);
+    transform: translateX(-5px);
+  }
+  32% {
+    clip-path: inset(80% 0 5% 0);
+    transform: translateX(7px);
+  }
+  40% {
+    clip-path: inset(5% 0 80% 0);
+    transform: translateX(-6px);
+  }
+  48% {
+    clip-path: inset(45% 0 30% 0);
+    transform: translateX(4px);
+  }
+  56% {
+    clip-path: inset(15% 0 60% 0);
+    transform: translateX(-7px);
+  }
+  64% {
+    clip-path: inset(70% 0 10% 0);
+    transform: translateX(5px);
+  }
+  72% {
+    clip-path: inset(0 0 0 0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes rgb-split-red {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(-3px, 1px);
+  }
+  40% {
+    transform: translate(2px, -1px);
+  }
+  60% {
+    transform: translate(-2px, 0);
+  }
+  80% {
+    transform: translate(3px, 1px);
+  }
+}
+
+@keyframes rgb-split-cyan {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(3px, -1px);
+  }
+  40% {
+    transform: translate(-2px, 1px);
+  }
+  60% {
+    transform: translate(2px, 0);
+  }
+  80% {
+    transform: translate(-3px, -1px);
+  }
+}
+
+@layer utilities {
+  .animate-glitch-jitter {
+    animation: glitch-jitter 0.9s steps(2, jump-none) both;
+  }
+  .animate-glitch-slice {
+    animation: glitch-slice 0.9s steps(1, jump-none) both;
+  }
+  .animate-rgb-split-red {
+    animation: rgb-split-red 0.9s steps(2, jump-none) both;
+  }
+  .animate-rgb-split-cyan {
+    animation: rgb-split-cyan 0.9s steps(2, jump-none) both;
+  }
+}

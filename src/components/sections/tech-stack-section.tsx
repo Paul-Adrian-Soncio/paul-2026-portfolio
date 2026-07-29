@@ -13,6 +13,8 @@ const logos: LogoItem[] = techStack.map(({ name, icon: Icon }) => ({
   ariaLabel: name,
 }));
 
+const logosReversed = [...logos].reverse();
+
 export function TechStackSection() {
   return (
     <section id="tech-stack" className="scroll-mt-16 py-24">
@@ -20,7 +22,7 @@ export function TechStackSection() {
         <SectionHeading eyebrow="Toolbox" title="Tech Stack" />
       </div>
 
-      <div className="mt-16">
+      <div className="mt-16 flex flex-col gap-6">
         <LogoLoop
           logos={logos}
           speed={60}
@@ -30,6 +32,18 @@ export function TechStackSection() {
           fadeOutColor="var(--background)"
           pauseOnHover
           ariaLabel="Tech stack"
+        />
+        <LogoLoop
+          logos={logosReversed}
+          direction="right"
+          speed={60}
+          gap={56}
+          logoHeight={32}
+          fadeOut
+          fadeOutColor="var(--background)"
+          pauseOnHover
+          ariaLabel="Tech stack"
+          className="md:hidden"
         />
       </div>
     </section>

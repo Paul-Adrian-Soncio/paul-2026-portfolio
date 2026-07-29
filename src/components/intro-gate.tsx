@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ArrowRight } from "lucide-react";
 import LetterGlitch from "@/components/letter-glitch";
 import SpecularButton from "@/components/specular-button";
@@ -13,6 +13,15 @@ const CLOSE_DURATION_MS = GLITCH_DURATION_MS + FADE_DURATION_MS;
 export function IntroGate() {
   const [dismissed, setDismissed] = useState(false);
   const [closing, setClosing] = useState(false);
+
+  useEffect(() => {
+    if (dismissed) return;
+    const { overflow } = document.body.style;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = overflow;
+    };
+  }, [dismissed]);
 
   if (dismissed) return null;
 

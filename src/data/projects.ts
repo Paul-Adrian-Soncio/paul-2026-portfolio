@@ -9,21 +9,19 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    name: "Project One",
+    name: "WindFarer",
     description:
-      "A short description of this project — what it does, the problem it solves, and any notable technical details worth highlighting.",
-    image: "/images/projects/project-1.svg",
-    status: "Coming Soon",
-    githubUrl: "https://github.com/your-username/project-one",
-    liveUrl: "https://project-one.example.com",
+      "A web companion that assists with trip planning and budgeting. Plan your trip like you've got a friend for it.",
+    image: "/images/projects/Windfarer.png",
+    status: "Live / Work in Progress",
+    liveUrl: "https://windfarer.vercel.app/welcome",
   },
   {
-    name: "Project Two",
-    description:
-      "A short description of this project — what it does, the problem it solves, and any notable technical details worth highlighting.",
-    image: "/images/projects/project-2.svg",
-    status: "Coming Soon",
-    githubUrl: "https://github.com/your-username/project-two",
+    name: "NeverForget",
+    description: "An oldschool style polaroid album to keep precious memories.",
+    image: "/images/projects/Neverforget.png",
+    status: "Live / Work in Progress",
+    liveUrl: "https://neverforget-tawny.vercel.app",
   },
   {
     name: "Project Three",

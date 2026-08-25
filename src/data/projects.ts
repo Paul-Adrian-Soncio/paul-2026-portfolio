@@ -23,20 +23,20 @@ export const projects: Project[] = [
     status: "Live / Work in Progress",
     liveUrl: "https://neverforget-tawny.vercel.app",
   },
-  {
-    name: "Project Three",
-    description:
-      "A short description of this project — what it does, the problem it solves, and any notable technical details worth highlighting.",
-    image: "/images/projects/project-3.svg",
-    status: "Coming Soon",
-    liveUrl: "https://project-three.example.com",
-  },
-  {
-    name: "Project Four",
-    description:
-      "A short description of this project — what it does, the problem it solves, and any notable technical details worth highlighting.",
-    image: "/images/projects/project-4.svg",
-    status: "Coming Soon",
-    githubUrl: "https://github.com/your-username/project-four",
-  },
+  // {
+  //   name: "Project Three",
+  //   description:
+  //     "A short description of this project — what it does, the problem it solves, and any notable technical details worth highlighting.",
+  //   image: "/images/projects/project-3.svg",
+  //   status: "Coming Soon",
+  //   liveUrl: "https://project-three.example.com",
+  // },
+  // {
+  //   name: "Project Four",
+  //   description:
+  //     "A short description of this project — what it does, the problem it solves, and any notable technical details worth highlighting.",
+  //   image: "/images/projects/project-4.svg",
+  //   status: "Coming Soon",
+  //   githubUrl: "https://github.com/your-username/project-four",
+  // },
 ];

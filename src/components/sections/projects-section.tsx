@@ -31,6 +31,9 @@ export function ProjectsSection() {
                   <h3 className="font-heading text-base font-semibold text-foreground">
                     {project.name}
                   </h3>
+                  <h4 className="mt-0.5 font-mono text-[10px]">
+                    {project.description}
+                  </h4>
                   <p className="mt-0.5 text-xs text-muted-foreground">
                     {project.status}
                   </p>

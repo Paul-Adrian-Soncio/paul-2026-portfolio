@@ -13,14 +13,14 @@ export const projects: Project[] = [
     description:
       "A web companion that assists with trip planning and budgeting. Plan your trip like you've got a friend for it.",
     image: "/images/projects/Windfarer.png",
-    status: "Live / Work in Progress",
+    status: "Live",
     liveUrl: "https://windfarer.vercel.app/welcome",
   },
   {
     name: "NeverForget",
     description: "An oldschool style polaroid album to keep precious memories.",
     image: "/images/projects/Neverforget.png",
-    status: "Live / Work in Progress",
+    status: "Live",
     liveUrl: "https://neverforget-tawny.vercel.app",
   },
   // {
